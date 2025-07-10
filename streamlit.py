@@ -119,13 +119,6 @@ Original file is located at
 # st.markdown(f"📊 **Akurasi Model Random Forest:** `{acc * 100:.2f}%`")
 #
 
-from pyngrok import ngrok
-ngrok.kill()
-
-import streamlit as st
-from pyngrok import ngrok
-import os, time
-
 os.system("streamlit run datasains.py &")
 time.sleep(5)
 print("🌐 Streamlit URL:", ngrok.connect(8501))
