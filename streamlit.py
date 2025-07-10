@@ -7,10 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1CWufmSD-b0idC_zgLyWqR1EXrFDt4fb0
 """
 
-!pip install streamlit
-
-!pip install pyngrok
-
 # Commented out IPython magic to ensure Python compatibility.
 # %%writefile datasains.py
 # import streamlit as st
@@ -123,12 +119,9 @@ Original file is located at
 # st.markdown(f"📊 **Akurasi Model Random Forest:** `{acc * 100:.2f}%`")
 #
 
-!ngrok config add-authtoken 2wkAHsbssIBF5FVqU02GUEj9QS2_3YP9RR4dkrzZChGq75KZe
-
 from pyngrok import ngrok
 ngrok.kill()
 
-!pip install streamlit pyngrok
 import streamlit as st
 from pyngrok import ngrok
 import os, time
