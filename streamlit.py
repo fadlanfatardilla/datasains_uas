@@ -28,9 +28,6 @@ model.fit(X_train, y_train)
 # Streamlit Interface
 st.set_page_config(page_title="Diagnosa Diabetes", layout="centered")
 
-# Logo kampus (jika ada)
-st.image("ubp.png", width=120)  # Pastikan ubp.png ada di direktori sama
-
 # Judul aplikasi
 st.markdown("<h1 style='text-align: center; color: #1976d2;'>Sistem Prediksi Risiko Diabetes</h1>", unsafe_allow_html=True)
 
